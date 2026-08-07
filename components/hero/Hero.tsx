@@ -74,7 +74,7 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="/resume.pdf"
+                href="/nabeel-aziz-cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-medium text-[#F8FAFC] glass-card glass-card-hover border border-white/10"

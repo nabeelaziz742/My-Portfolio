@@ -11,7 +11,7 @@ import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#030712] text-[#F8FAFC] selection:bg-[#3B82F6] selection:text-white">
+    <main className="min-h-screen bg-[#081522] text-[#EAF2F5] selection:bg-[#20B8A5] selection:text-[#081522]">
       {/* Sticky Navigation with ScrollSpy and CV Download */}
       <Navbar />
 

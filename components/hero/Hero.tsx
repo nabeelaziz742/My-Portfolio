@@ -8,7 +8,6 @@ import {
   FileDown,
   Terminal,
   Server,
-  Layers,
   CheckCircle,
   Briefcase,
   ChevronRight,
@@ -18,11 +17,10 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#030712]">
-      {/* Background Subtle Tech Grid & Radial Glows */}
+    <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-[#081522]">
+      {/* Background Subtle Tech Grid & Radial Glow */}
       <div className="absolute inset-0 bg-grid-pattern [mask-image:radial-gradient(ellipse_75%_65%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-80" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#3B82F6]/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-[#8B5CF6]/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#20B8A5]/8 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -36,38 +34,38 @@ export default function Hero() {
           >
             {/* Status & Experience Badge */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B0F19] border border-white/10 shadow-lg shadow-blue-500/5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#122638] border border-[#263E50] shadow-sm">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#20B8A5] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#20B8A5]"></span>
                 </span>
-                <span className="text-xs font-mono font-medium text-[#94A3B8] tracking-wider uppercase">
+                <span className="text-xs font-mono font-medium text-[#A5B7C3] tracking-wider uppercase">
                   Available for Backend Roles
                 </span>
               </div>
 
-              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-[#3B82F6]">
-                <Briefcase className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#122638] border border-[#263E50] text-xs font-mono text-[#20B8A5]">
+                <Briefcase className="w-3.5 h-3.5 text-[#20B8A5]" />
                 <span>6 Months Ex-Nexrupt Technologies</span>
               </div>
             </div>
 
             {/* Main Title & Role Positioning */}
             <div className="space-y-3">
-              <p className="text-sm font-mono text-[#3B82F6] font-medium tracking-wide">
+              <p className="text-sm font-mono text-[#20B8A5] font-medium tracking-wide">
                 HELLO WORLD, I'M {portfolioData.personal.name.toUpperCase()}
               </p>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#F8FAFC] font-space leading-[1.1]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#EAF2F5] font-space leading-[1.1]">
                 Python Django{" "}
-                <span className="bg-gradient-to-r from-[#3B82F6] via-[#60A5FA] to-[#8B5CF6] bg-clip-text text-transparent">
+                <span className="text-[#20B8A5]">
                   Backend Developer
                 </span>
               </h1>
 
               {/* Dynamic Terminal Subtitle */}
-              <div className="text-sm sm:text-base text-[#94A3B8] font-mono h-8 flex items-center justify-center lg:justify-start gap-2">
-                <span className="text-[#3B82F6] font-bold">&gt;</span>
+              <div className="text-sm sm:text-base text-[#A5B7C3] font-mono h-8 flex items-center justify-center lg:justify-start gap-2">
+                <span className="text-[#20B8A5] font-bold">&gt;</span>
                 <TypeAnimation
                   sequence={[
                     "Building Scalable REST APIs with Django & DRF",
@@ -82,11 +80,11 @@ export default function Hero() {
                   wrapper="span"
                   speed={55}
                   repeat={Infinity}
-                  className="text-[#F8FAFC]"
+                  className="text-[#EAF2F5]"
                 />
               </div>
 
-              <p className="text-base text-[#94A3B8] font-normal max-w-xl mx-auto lg:mx-0 leading-relaxed pt-1">
+              <p className="text-base text-[#A5B7C3] font-normal max-w-xl mx-auto lg:mx-0 leading-relaxed pt-1">
                 {portfolioData.personal.tagline} Experienced in building production systems with 
                 clean data serialization, query optimization, and secure API lifecycles.
               </p>
@@ -96,7 +94,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-[#3B82F6] via-[#2563EB] to-[#8B5CF6] hover:opacity-95 shadow-xl shadow-[#3B82F6]/25 hover:shadow-[#3B82F6]/40 transition-all duration-300 group"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-[#081522] bg-[#20B8A5] hover:bg-[#35D0BA] shadow-lg shadow-[#20B8A5]/25 transition-all duration-200 group"
               >
                 <span>View Real Backend Projects</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -107,15 +105,15 @@ export default function Hero() {
                 download={portfolioData.personal.cvFilename}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-[#F8FAFC] glass-card glass-card-hover border border-white/10"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-[#EAF2F5] bg-[#122638] hover:bg-[#193449] border border-[#263E50] hover:border-[#20B8A5]/50 transition-all"
               >
-                <FileDown className="w-4 h-4 text-[#3B82F6]" />
+                <FileDown className="w-4 h-4 text-[#20B8A5]" />
                 <span>Download Verified CV</span>
               </a>
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-1.5 px-4 py-3.5 rounded-xl text-sm font-medium text-[#94A3B8] hover:text-[#F8FAFC] transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-3.5 rounded-xl text-sm font-medium text-[#A5B7C3] hover:text-[#EAF2F5] transition-colors"
               >
                 <span>Contact Me</span>
                 <ChevronRight className="w-4 h-4" />
@@ -123,12 +121,12 @@ export default function Hero() {
             </div>
 
             {/* Key Skill Tags */}
-            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs font-mono text-[#94A3B8]">
-              <span className="text-[#64748B]">Core Stack:</span>
+            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs font-mono text-[#A5B7C3]">
+              <span className="text-[#A5B7C3]/70">Core Stack:</span>
               {["Python", "Django", "DRF", "PostgreSQL", "REST APIs", "JWT", "RBAC"].map((tag) => (
                 <span
                   key={tag}
-                  className="px-2.5 py-1 rounded-md bg-[#0B0F19] border border-white/5 text-[#CBD5E1]"
+                  className="px-2.5 py-1 rounded-md bg-[#122638] border border-[#263E50] text-[#EAF2F5]"
                 >
                   {tag}
                 </span>
@@ -145,31 +143,31 @@ export default function Hero() {
           >
             {/* Visual Portrait Card */}
             <div className="relative w-full max-w-[340px] sm:max-w-[380px] group">
-              {/* Animated Glow Halo */}
-              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#3B82F6] via-[#6366F1] to-[#8B5CF6] opacity-30 blur-xl group-hover:opacity-50 transition-opacity duration-700 pointer-events-none" />
+              {/* Subtle Teal Ambient Glow */}
+              <div className="absolute -inset-1 rounded-3xl bg-[#20B8A5]/20 opacity-40 blur-xl group-hover:opacity-60 transition-opacity duration-500 pointer-events-none" />
 
-              <div className="relative rounded-3xl overflow-hidden glass-card border border-white/10 shadow-2xl p-2 bg-[#0B0F19]/90">
-                <div className="relative aspect-[4/4.6] rounded-2xl overflow-hidden bg-[#030712]">
+              <div className="relative rounded-3xl overflow-hidden bg-[#122638] border border-[#263E50] shadow-2xl p-2">
+                <div className="relative aspect-[4/4.6] rounded-2xl overflow-hidden bg-[#081522]">
                   <img
                     src="/profile.jpg"
                     alt="Muhammad Nabeel Aziz — Python Django Backend Developer"
-                    className="w-full h-full object-cover object-top filter brightness-105 group-hover:scale-102 transition-transform duration-700"
+                    className="w-full h-full object-cover object-top filter brightness-105 group-hover:scale-102 transition-transform duration-500"
                   />
                   {/* Bottom Vignette Gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#081522] via-transparent to-transparent opacity-85" />
 
                   {/* Overlaid Badges */}
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs">
-                    <div className="glass-card px-3 py-1.5 rounded-xl border border-white/10 backdrop-blur-md">
-                      <p className="font-semibold text-white font-space text-xs">
+                    <div className="bg-[#0D1D2B]/95 px-3 py-1.5 rounded-xl border border-[#263E50] backdrop-blur-md">
+                      <p className="font-semibold text-[#EAF2F5] font-space text-xs">
                         Muhammad Nabeel Aziz
                       </p>
-                      <p className="text-[10px] text-[#94A3B8] font-mono">
+                      <p className="text-[10px] text-[#A5B7C3] font-mono">
                         Backend Engineer
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[10px]">
+                    <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#20B8A5]/15 border border-[#20B8A5]/35 text-[#20B8A5] font-mono text-[10px]">
                       <CheckCircle className="w-3 h-3" />
                       <span>Verified</span>
                     </div>
@@ -180,23 +178,23 @@ export default function Hero() {
 
             {/* Quick Backend Architecture Status Pill */}
             <div className="grid grid-cols-2 gap-3 w-full max-w-[380px]">
-              <div className="glass-card p-3.5 rounded-2xl border border-white/10 flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#3B82F6]/10 text-[#3B82F6] shrink-0">
+              <div className="bg-[#122638] p-3.5 rounded-2xl border border-[#263E50] flex items-center gap-3">
+                <div className="p-2 rounded-xl bg-[#20B8A5]/10 text-[#20B8A5] shrink-0">
                   <Server className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-[10px] text-[#94A3B8] font-mono uppercase">Primary Engine</p>
-                  <p className="text-xs font-semibold text-[#F8FAFC]">Django & DRF</p>
+                  <p className="text-[10px] text-[#A5B7C3] font-mono uppercase">Primary Engine</p>
+                  <p className="text-xs font-semibold text-[#EAF2F5]">Django & DRF</p>
                 </div>
               </div>
 
-              <div className="glass-card p-3.5 rounded-2xl border border-white/10 flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-emerald-500/10 text-emerald-400 shrink-0">
+              <div className="bg-[#122638] p-3.5 rounded-2xl border border-[#263E50] flex items-center gap-3">
+                <div className="p-2 rounded-xl bg-[#20B8A5]/10 text-[#20B8A5] shrink-0">
                   <ShieldCheck className="w-4 h-4" />
                 </div>
                 <div>
-                  <p className="text-[10px] text-[#94A3B8] font-mono uppercase">Security</p>
-                  <p className="text-xs font-semibold text-[#F8FAFC]">JWT & RBAC</p>
+                  <p className="text-[10px] text-[#A5B7C3] font-mono uppercase">Security</p>
+                  <p className="text-xs font-semibold text-[#EAF2F5]">JWT & RBAC</p>
                 </div>
               </div>
             </div>
@@ -214,18 +212,18 @@ export default function Hero() {
           {portfolioData.metrics.map((metric, i) => (
             <div
               key={i}
-              className="glass-card glass-card-hover p-5 rounded-2xl border border-white/10 relative overflow-hidden"
+              className="bg-[#122638] hover:bg-[#193449] p-5 rounded-2xl border border-[#263E50] hover:border-[#20B8A5]/40 transition-all duration-200 relative overflow-hidden"
             >
               <div className="flex items-baseline justify-between mb-1">
-                <span className="text-2xl sm:text-3xl font-bold font-space text-[#F8FAFC]">
+                <span className="text-2xl sm:text-3xl font-bold font-space text-[#EAF2F5]">
                   {metric.value}
                 </span>
-                <span className="w-2 h-2 rounded-full bg-[#3B82F6]" />
+                <span className="w-2 h-2 rounded-full bg-[#20B8A5]" />
               </div>
-              <p className="text-xs font-semibold text-[#F8FAFC] tracking-tight">
+              <p className="text-xs font-semibold text-[#EAF2F5] tracking-tight">
                 {metric.label}
               </p>
-              <p className="text-[11px] text-[#94A3B8] font-mono mt-0.5">
+              <p className="text-[11px] text-[#A5B7C3] font-mono mt-0.5">
                 {metric.subtext}
               </p>
             </div>

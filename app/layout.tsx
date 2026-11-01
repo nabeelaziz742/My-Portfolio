@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#030712",
+  themeColor: "#081522",
   width: "device-width",
   initialScale: 1,
 };
@@ -139,7 +139,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans bg-[#030712] text-[#F8FAFC] antialiased selection:bg-[#3B82F6] selection:text-white`}
+        className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans bg-[#081522] text-[#EAF2F5] antialiased selection:bg-[#20B8A5] selection:text-[#081522]`}
       >
         {children}
       </body>

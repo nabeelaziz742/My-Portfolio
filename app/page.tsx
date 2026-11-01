@@ -4,6 +4,7 @@ import About from "@/components/about/About";
 import Experience from "@/components/experience/Experience";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/projects/Projects";
+import Architecture from "@/components/architecture/Architecture";
 import Github from "@/components/github/Github";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
@@ -11,31 +12,34 @@ import Footer from "@/components/footer/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#030712] text-[#F8FAFC] selection:bg-[#3B82F6] selection:text-white">
-      {/* Sticky Navigation */}
+      {/* Sticky Navigation with ScrollSpy and CV Download */}
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Hero Section with Command Line Sequence & Brand Positioning */}
       <Hero />
 
-      {/* About & Philosophy Section */}
+      {/* About & Engineering Philosophy */}
       <About />
 
-      {/* Professional Experience Section */}
+      {/* Professional Experience (Nexrupt Technologies & Project Track Record) */}
       <Experience />
 
-      {/* Technical Skills Section */}
+      {/* Technical Skills & Competencies (Categorized, Zero Arbitrary Progress Bars) */}
       <Skills />
 
-      {/* Featured Projects Section */}
+      {/* Featured Projects (Corona Nissan Live Dealership, ISP Platform, Restaurant API, HR Portal) */}
       <Projects />
 
-      {/* GitHub Activity & Open Source Section */}
+      {/* Interactive Backend Architecture & REST API Playground */}
+      <Architecture />
+
+      {/* GitHub Activity & Version Control */}
       <Github />
 
-      {/* Contact Form Section */}
+      {/* Professional Contact Hub */}
       <Contact />
 
-      {/* Footer Section */}
+      {/* Developer Footer */}
       <Footer />
     </main>
   );
